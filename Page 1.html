@@ -14,12 +14,12 @@
             <h2>1.1)Petite histoire de Python</h2>
           <div class="col-lg-6 col-md-6 col-xs-12"><p>Python est un langage de programmation, dont la première version est sortie en 1991. Créé par Guido van Rossum, il a voyagé du Macintosh de son créateur, qui travaillait à cette époque au Centrum voor Wiskunde en Informatica aux Pays-Bas, jusqu’à se voir associer une organisation à but non lucratif particulièrement dévouée, la Python Software Foundation, créée en 2001.</p></div>
            <img src="Guido van rossum 1.jpg" class="img-fluid">
-           <div class="col-lg-6 col-md-6 col-xs-12">Le nom rend hommage a la troupe de comiques les "Monty Python".
+           <div class="col-lg-6 col-md-6 col-xs-12">Le nom rend hommage à la troupe de comiques les "Monty Python".
             C'est un langage informatique plutot simple à apprendre et qui détient un grand nombre de possibilités.
             La communauté est plutot active et les bibliothéques permettent de faire toutes sortes de choses en passant par les maths ou bien par la programmation de jeux !</p></div>
             <h2>1.2)Comment installer WinPython</h2>
             <p>Pour installer Python sur Windows, on va devoir aller sur internet et taper <b>Download Python</b> ou utiliser ce lien <a href="https://winpython.github.io/"> Télécharger WinPython</a>.
-            Il faudra prendre la version 3.7.1 car celle ci semble etre la plus optimiser, WinPython est un pack contenant Spyder, Python 3.4 et plus encore.</p>
+            Il faudra prendre la version 3.7.1 car celle ci semble être la plus optimisée, WinPython est un pack contenant Spyder, Python 3.4 et plus encore.</p>
             <h2>1.3)L'interface de Spyder</h2>
             <p>La fenetre de Spyder contient 3 zones importantes :</p>
             <img src="Capture.PNG" class="img-fluid">
@@ -35,14 +35,25 @@
             <p>Après avoir fait cela, il faudra enregistrer le document sous le nom que vous souhaitez puis ensuite l'exécuter en appuyant sur la flèche verte ou en faisant (Ctrl + F9).
                Si tout ce passe bien, le programme devrait afficher "Bonjour tout le monde" dans la zone C, qui est la zone d'exécution du programme.</p>
             <p>On a appris comment faire un programme simple sur Spyder, on va donc passer à la deuxième partie qui récapitule et montre des exemples légèrement plus complexes.</p>
-            <h1>2]Exemples</h1>
+            <h1>2]Exemple détaillé</h1>
             <h2>2.1)Rappel</h2>
             <p>On a vu pour l'instant comment installer WinPython, les différentes zone de son écran principale ainsi qu'un exemple. Maintenant, on va continuer avec des exemples légèrement plus poussés.</p>
             <h2>2.2)Faire un programme qui calcule une moyenne</h2>
-            <p></p>
-
-
-            </div>
-   
+            <p>On va donc voir comment faire un programme qui calcule une moyenne, plus précisément des notes.
+               Pour cela on va d'abord importer la galerie math grace à la commande : <code>from math import*</code></p>
+            <p>Ensuite on va définir le nom, pour cela on va utiliser "str" qui permet de cibler une catégorie en particulier. On va donc taper ceci : <code>nom = str(input("Donnez votre nom :"))</code>. On va aussi faire de même pour le prénom : <code>prenom = str(input("Donnez votre prénom :"))</code>.</p>
+            <p>On peut aussi mettre sa classe et la matière dans laquelle on veut faire la moyenne : <code>classe = str(input("Donnez votre classe :"))</code> et <code> matiere = str(input("Choisissez une matière :"))</code>.</p>
+            <p>Voici la partie la plus importante, l'entrée des notes. Ici il y en aura 5 et on utilisera "float" et non "str" car float permet l'entrée de chiffres à virgules. On tape donc ceci : <code>note1 = float(input("Entrez la valeur de la note 1 :"))</code>. Refaite ceci 4 fois en n'oubliant pas de changer le numéro à chaque nouvelle notes sinon cela sera peu compréhensible.</p>
+            <p>Après avoir fait ceci on note notre nombre de notes comme ceci : <code>nb_notes = 5</code>. Suite à cela on va écrire le programme de calcul de la moyenne avec nos 5 notes en le divisant par le nombre de notes : <code>moyenne = (note1 + note2 + note3 + note4 + note5) / nb_notes</code>.</p>
+            <p>Maintenant on peut rajouter la moyenne arrondie car on a utiliser float ce qui veut dire qu'on peut avoir des nombres à virgules. Le code ressemble à ceci : <code>moy_arrondie = ceil(moyenne)</code>. Ici, on utilisera "ceil" de la galerie math qui sert à arrondir le résultat.</p>
+            <p>Puis on va écrire une ligne avec toutes les informations comme le nom, prénom, la classe, la matière, les notes et la moyenne arrondie : <code>print(nom, prenom, "classe de", classe, matiere, ceil(moyenne))</code>.</p>
+            <img src="Capture2.PNG" class="img-fluid">
+            <p>Si tout se passe bien, le programme doit ressembler à celui sur l'image ci dessus maintenant voyons ce que cela donne une fois effectué.</p>
+            <img src="Capture 4.PNG" class="img-fluid">
+            <p>La console Python nous affiche ceci : "Dupont Ludovic classe de 2GT4 Histoire 14". Le programme a donc mis à la suite les différents éléments et a arrondie la moyenne pour donner 12.</p>
+            <h2>2.3)Conclusion</h2>
+            <p>On a donc fait un petit rappel historique sur Python, puis on a vu comment installer WinPython. Après l'avoir lancer on a vu les 3 zones principales du logiciel et on a entrer une commande simple. Puis on a fait un exemple détaillé sur comment faire un programme qui demande des informations et des notes pour calculer la moyenne d'un élève.</p>
+            <p>Merci d'avoir lu ce site jusqu'ici et j'espère que cela à permis a quelques personnes de se lancer dans le monde de la programmation.</p>
+            </div>   
 </body>
 </html>
